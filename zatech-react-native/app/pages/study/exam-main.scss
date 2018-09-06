@@ -1,0 +1,216 @@
+
+.exam-main{
+  height: 100%;
+  background-color: #fafafa;
+  position: relative;
+
+  .exam-content{
+    height: 86.5%;
+    overflow-y: auto;
+
+    .nextsubject_btn{
+      width: 92%;
+      height: 45px;
+
+      margin-left: 4%;
+      margin-right: 4%;
+
+      font-size: 16px;
+
+      background-color: #00a5ff;
+      color: white;
+
+      border-style: none;
+      border-color: #fafafa;
+
+      border-radius: 4px;
+      outline: none;
+    }
+    //单选题隐藏
+    .nextsubject_btn[type='1']{
+      display: none;
+    }
+
+    .titlegroup{
+      width: 90%;
+
+      margin-left: 5%;
+      margin-right: 5%;
+
+      line-height: 20px;
+
+      button{
+        float: left;
+        width: 40px;
+        height: 20px;
+
+        font-size: 12px;
+
+        background-color: #24c3ff;
+        color: white;
+
+        border-style: none;
+        border-color: #fafafa;
+
+        border-radius: 2px;
+        outline: none;
+      }
+
+      a{
+        vertical-align: middle;
+
+        margin-left: 7px;
+        font-size: 15px;
+        color:#333333;
+      }
+    }
+
+    .subjectgroup{
+      margin-left: 15px;
+    }
+
+    .subjectitem:hover {
+      background-color: #fafafa;
+    }
+
+    .subjectitem:focus {
+      background-color: #fafafa;
+    }
+
+    .subjectitem:active {
+      background-color: #fafafa;
+    }
+
+    .subjectitem{
+      //height: 40px;
+      font-size: 15px;
+      line-height:24px;
+
+      .value-group{
+        display: inline-block;
+        width: 86%;
+        vertical-align: middle;
+        margin-left: 10px;
+
+        .subitem-value{
+          vertical-align: middle;
+        }
+        //right
+        .subitem-value[type='2']{
+          color: #00a4ff;
+        }
+        //error
+        .subitem-value[type='3']{
+          color: #ff0c0c;
+        }
+        //by user
+        .subitem-value[type='4']{
+          color: #00a4ff;
+        }
+      }
+
+      //控制单选大小
+      .subitem-img1{
+        border-style: none;
+        border-width: 0px;
+        background-color: #fafafa;
+        outline: none;
+
+        width: 27px;
+        height: 27px;
+
+        color: #333333;
+        font-size: 15px;
+
+        vertical-align: top;
+      }
+      //normal
+      .subitem-img1[type='1']{
+        border-color: #999999;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 13.5px;
+      }
+      //right
+      .subitem-img1[type='2'], .subitem-img1[type='4']{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/right-blue.png);
+      }
+      //error
+      .subitem-img1[type='3']{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/error-red.png);
+      }
+
+      //控制多选大小
+      .subitem-img2{
+        border-style: solid;
+        border-width: 1px;
+        border-color: #999999;
+
+        border-radius: 3px;
+
+        background-color: #fafafa;
+        outline: none;
+
+        width: 25px;
+        height: 25px;
+
+        vertical-align: top;
+      }
+
+      .subitem-img2[type='4']{
+        border-width: 0px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/multi-right.png);
+      }
+
+      .subitem-img2[type='3']{
+        border-width: 0px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/multi-error.png);
+      }
+
+      .subitem-img2[type='2']{
+        border-width: 0px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/multi-right-1.png);
+      }
+    }
+
+    .bottomdesc{
+      position: absolute;
+
+      text-align: center;
+
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      z-index: 8;
+
+      & > a{
+        //line-height: 30px;
+        font-size: 12px;
+        color: #CCCCCC;
+      }
+
+      .shadow{
+        width: 100%;
+        height: 8px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./res/shadow.png);
+      }
+    }
+  }
+}

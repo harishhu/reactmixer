@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "io.zhongan.reactnativebuildhost"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+            universalApk false
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    api "com.android.support:appcompat-v7:26.1.0"
+    //comment as default, just import it before we need to build the base library of react android
+ //   api project(':ReactAndroid')
+
+//    api ("com.facebook.react:react-native:0.55.3") {
+//        exclude group: 'com.android.support', module: 'appcompat-v7'
+//    }
+//    //aa11
+//    api "io.zhongan.tech:rnbaselib:1.0.4"
+
+    api project(':rnbaselib')
+
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    implementation 'io.reactivex:rxjava:1.2.9'
+}

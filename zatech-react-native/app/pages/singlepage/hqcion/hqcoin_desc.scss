@@ -1,0 +1,68 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.hqcoin-desc{
+  overflow-y: auto;
+
+  height: 100%;
+  background-color: #f7f7f7;
+
+  font-size: 15px;
+
+  .item{
+    background-color: white;
+
+    border-color: #f7f7f7;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+
+    .imgask{
+      position: absolute;
+      width: 26px;
+      height: 26px;
+
+      top: 0px;
+      right: 10px;
+    }
+
+    .imganswer{
+      position: absolute;
+      width: 26px;
+      height: 26px;
+
+      top: 6px;
+      right: 10px;
+    }
+
+    .icon-group{
+      position: relative;
+    }
+
+    table{
+      border-color: red;
+      border-width: 1px;
+    }
+
+    .ask{
+      line-height: 28px;
+      color: #333333;
+      text-align: left;
+
+      a{
+        vertical-align: middle;
+      }
+    }
+
+    .answer{
+      color: #666666;
+
+      .contentArea{
+        line-height: 26px;
+        margin-top: 8px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

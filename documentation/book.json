@@ -1,0 +1,18 @@
+{
+    "title": "ZATech",
+    "author" : "mobileteam",
+    "description" : "保险业务线移动基础框架介绍",
+    "language" : "zh-hans",
+    "structure": {
+      "readme": "README.md"
+    },
+    "links": {
+      "gitbook": false,
+      "sharing": {
+        "google": false,
+        "facebook": false,
+        "twitter": false,
+        "all": false
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+.yinxiaoyuanview{
+  line-height: normal;
+  overflow-x: none;
+
+  position: relative;
+
+  .emptyview{
+    line-height: 200px;
+    font-size: 13px;
+    color: #999999;
+  }
+
+  .seperator{
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+
+  .flyhqcoin{
+    width: 170px;
+    height: 170px;
+
+    position: absolute;
+  }
+}
+
+.centerView{
+  text-align: center;
+}

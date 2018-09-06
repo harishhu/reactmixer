@@ -1,0 +1,43 @@
+<resources>
+    <color name="color_white">#ffffff</color>
+    <color name="action_bar_green"> #10b2ff</color>
+    <color name="default_actionbar_background">#10b2ff</color>
+
+    <color name="share_cancel_background">#f6f6f6</color>
+    <color name="share_platform_background">#e8e8e8</color>
+
+    <color name="share_item_text_color">#666666</color>
+
+    <color name="green">#2cbc5c</color>
+    <color name="gray">#cccccc</color>
+
+    <color name="white">#fff</color>
+    <color name="dark">#666666</color>
+    <color name="deepDark">#282828</color>
+    <color name="blue">#33b6e7</color>
+    <color name="occBlue">#00b1ff</color>
+    <color name="add_customer_tag_bg">#91dbfe</color>
+
+    <color name="statusbar_hint_color">#3c000000</color>
+    <color name="titleBg">#10b2ff</color>
+    <color name="occtitleBg">#666666</color>
+    <color name="occBg">#f7f7f7</color>
+    <color name="occQuerykeyBg">#cccccc</color>
+    <color name="occdetailBg">#ffffed</color>
+    <color name="occkeywordline">#cccccc</color>
+    <color name="occkeywordtitle">#3B3833</color>
+    <color name="occquerywordtitle">#333333</color>
+    <color name="occContent">#999999</color>
+    <color name="blue_date">#007AFF</color>
+    <color name="bg_date">#F5F5F5</color>
+
+    <color name="text_10">#333333</color>
+    <color name="text_11">#999999</color>
+    <color name="transparent">#90000000</color>
+    <color name="transparent3">#50000000</color>
+
+    <color name="tv_share">#999999</color>
+    <color name="share_bg">#33999999</color>
+    <color name="tv_cancel">#333333</color>
+    <color name="text_color">#FC781B</color>
+</resources>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="height: 100%;overflow:hidden;">
+  <head>
+    <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,width=device-width' name='viewport' />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript">
+    function initMeta(){
+       var deviceWidth = document.documentElement.clientWidth;
+      //
+      // var dpr = 1;//window.devicePixelRatio;
+      // var width = deviceWidth * dpr;
+
+      var ratio = 1.0;
+      if(deviceWidth == 320){
+        ratio = 0.9;
+        var metaEl = document.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'user-scalable=no,maximum-scale=3.0,minimum-scale=0.5,width=device-width,initial-scale=' + ratio);
+        document.firstElementChild.appendChild(metaEl);
+      }else{
+        var metaEl = document.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,width=device-width,initial-scale=' + ratio);
+        document.firstElementChild.appendChild(metaEl);
+      }
+      console.log("" + deviceWidth + " devicePixelRatio = " + ratio);
+
+      window.HQappInitScale = ratio;
+    }
+
+    var hqAppGlobal = {};
+    initMeta();
+    </script>
+  </head>
+  <body style="height: 100%; overflow:hidden;">
+    <!-- <audio controls>
+  <source src="https://hq-app-test.zhongan.io/api/file/get?url=1506058722538.mp3" type="audio/mpeg">
+</audio> -->
+    <div id="app" style="height: 100%; width:100%;"></div>
+  </body>
+</html>

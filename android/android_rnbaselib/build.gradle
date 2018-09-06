@@ -1,0 +1,150 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: LOCAL_REPO_URL)
+        pom.groupId = GROUP
+        pom.artifactId = POM_ARTIFACT_ID
+        pom.version = VERSION
+    }
+}
+
+/**
+ * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
+ * and bundleReleaseJsAndAssets).
+ * These basically call `react-native bundle` with the correct arguments during the Android build
+ * cycle. By default, bundleDebugJsAndAssets is skipped, as in debug/dev mode we prefer to load the
+ * bundle directly from the development server. Below you can see all the possible configurations
+ * and their defaults. If you decide to add a configuration block, make sure to add it before the
+ * `apply from: "../../node_modules/react-native/react.gradle"` line.
+ *
+ * project.ext.react = [
+ *   // the name of the generated asset file containing your JS bundle
+ *   bundleAssetName: "index.android.bundle",
+ *
+ *   // the entry file for bundle generation
+ *   entryFile: "index.android.js",
+ *
+ *   // whether to bundle JS and assets in debug mode
+ *   bundleInDebug: false,
+ *
+ *   // whether to bundle JS and assets in release mode
+ *   bundleInRelease: true,
+ *
+ *   // whether to bundle JS and assets in another build variant (if configured).
+ *   // See http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-Variants
+ *   // The configuration property can be in the following formats
+ *   //         'bundleIn${productFlavor}${buildType}'
+ *   //         'bundleIn${buildType}'
+ *   // bundleInFreeDebug: true,
+ *   // bundleInPaidRelease: true,
+ *   // bundleInBeta: true,
+ *
+ *   // whether to disable dev mode in custom build variants (by default only disabled in release)
+ *   // for example: to disable dev mode in the staging build type (if configured)
+ *   devDisabledInStaging: true,
+ *   // The configuration property can be in the following formats
+ *   //         'devDisabledIn${productFlavor}${buildType}'
+ *   //         'devDisabledIn${buildType}'
+ *
+ *   // the root of your project, i.e. where "package.json" lives
+ *   root: "../../",
+ *
+ *   // where to put the JS bundle asset in debug mode
+ *   jsBundleDirDebug: "$buildDir/intermediates/assets/debug",
+ *
+ *   // where to put the JS bundle asset in release mode
+ *   jsBundleDirRelease: "$buildDir/intermediates/assets/release",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in debug mode
+ *   resourcesDirDebug: "$buildDir/intermediates/res/merged/debug",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in release mode
+ *   resourcesDirRelease: "$buildDir/intermediates/res/merged/release",
+ *
+ *   // by default the gradle tasks are skipped if none of the JS files or assets change; this means
+ *   // that we don't look at files in android/ or ios/ to determine whether the tasks are up to
+ *   // date; if you have any other folders that you want to ignore for performance reasons (gradle
+ *   // indexes the entire tree), add them here. Alternatively, if you have JS files in android/
+ *   // for example, you might want to remove it from here.
+ *   inputExcludes: ["android/**", "ios/**"],
+ *
+ *   // override which node gets called and with what additional arguments
+ *   nodeExecutableAndArgs: ["node"],
+ *
+ *   // supply additional arguments to the packager
+ *   extraPackagerArgs: []
+ * ]
+ */
+
+project.ext.react = [
+        entryFile: "index-rnbrowser-buildentry.js",
+        bundleInDebug: false,
+        bundleInRelease: false
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+
+buildscript {
+    repositories {
+        jcenter(){
+            url 'http://jcenter.bintray.com/'
+        }
+        google()
+//        maven {
+//            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+//        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+//        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+repositories {
+    mavenLocal()
+    jcenter(){
+        url 'http://jcenter.bintray.com/'
+    }
+    google()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url "/Users/hufuyi/mywork/rnappsdk/zakj-app-sdk/android"
+    }
+}
+
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api ("com.facebook.react:react-native:0.55.3") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+
+    implementation "com.android.support:appcompat-v7:26.1.0"
+    compileOnly 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.android.support:multidex:1.0.2'
+    //微信分享
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

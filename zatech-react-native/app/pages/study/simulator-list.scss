@@ -1,0 +1,26 @@
+.simulatorlist{
+  margin-left: 15px;
+
+  .listitem{
+    height: 60px;
+    line-height: 60px;
+
+    a{
+      font-size: 16px;
+      color: #333333;
+
+      vertical-align: middle;
+    }
+
+    .arraygroup{
+      float:right;
+      margin-right: 15px;
+
+      img{
+        width: 20px;
+        height: 11px;
+        transform:rotate(90deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+.xinbinview{
+  line-height: normal;
+  overflow-x: none;
+
+  .emptyview{
+    line-height: 200px;
+    font-size: 13px;
+    color: #999999;
+  }
+
+  .seperator{
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+}
+
+.centerView{
+  text-align: center;
+}

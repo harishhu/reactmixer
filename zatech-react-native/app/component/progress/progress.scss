@@ -1,0 +1,16 @@
+
+.progress-group{
+  display: inline-block;
+  border-radius: 8px;
+
+  .progress{
+    height: 100%;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+  }
+
+  .progressfinish{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+  }
+}

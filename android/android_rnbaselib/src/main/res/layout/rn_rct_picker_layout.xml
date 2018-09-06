@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.zhongan.tech.rnbaselib.reactnative.rctwidgets.picker.RCTPickerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="15dp">-->
+        <!--<TextView-->
+            <!--android:id="@+id/css_cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="取消"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_alignParentLeft="true"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/customer_source_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/colorBlock"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text=""/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/css_ok"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="确定"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    <!--</RelativeLayout>-->
+    <io.zhongan.tech.rnbaselib.ui.WheelView
+        android:id="@+id/wheel_view_wv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+</io.zhongan.tech.rnbaselib.reactnative.rctwidgets.picker.RCTPickerView>

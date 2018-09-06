@@ -1,0 +1,87 @@
+.simu-entry{
+  height: 100%;
+  position: relative;
+  background-color: #fafafa;
+
+  .content{
+    position: absolute;
+    background-color: white;
+
+    border-radius: 4px;
+
+    top:5px;
+    bottom:15px;
+    left: 15px;
+    right: 15px;
+
+    .itemgroup{
+      position: relative;
+      height: 100px;
+
+      .itemgroup1{
+        position: absolute;
+        left: 12%;
+        right: 12%;
+
+        @media (device-width:320px) {
+          left: 9%;
+          right: 9%;
+        }
+
+        line-height: 26px;
+
+        .item-keyvalue{
+          .seperator{
+            display: inline-block;
+            width: 25px;
+          }
+
+          .itemkey{
+            font-size: 15px;
+            color: #666666;
+          }
+
+          .itemvalue{
+            font-size: 15px;
+            color: #333333;
+          }
+
+          .itemtitle{
+            font-weight: bold;
+          }
+        }
+
+        .item-keyvalue[type='exam']{
+          display: none;
+        }
+      }
+    }
+
+    .buttongroup{
+      position: relative;
+
+      div{
+        position: absolute;
+        left: 5%;
+        right: 5%;
+
+        button{
+          width: 100%;
+          height: 45px;
+
+          font-size: 17px;
+
+          background-color: #00a4ff;
+          color: white;
+
+          border-style: solid;
+          border-color: #00a4ff;
+
+          border-radius: 3px;
+          border-width: 1px;
+          outline: none;
+        }
+      }
+    }
+  }
+}

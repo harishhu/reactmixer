@@ -1,0 +1,29 @@
+.taskdesc{
+  overflow-y: auto;
+  height: 100%;
+
+  background-color: #f7f7f7;
+
+  font-size: 15px;
+
+  h3{
+    font-size: 18px;
+  }
+
+  .row1-group{
+    position: relative;
+
+    text-align: left;
+  }
+
+  .index-row{
+    position: absolute;
+
+    top: 0px;
+    left: 2px;
+  }
+
+  .ask{
+    line-height: 26px;
+  }
+}

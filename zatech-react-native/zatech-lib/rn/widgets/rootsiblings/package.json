@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-root-siblings@^3.0.0",
+        "scope": null,
+        "escapedName": "react-native-root-siblings",
+        "name": "react-native-root-siblings",
+        "rawSpec": "^3.0.0",
+        "spec": ">=3.0.0 <4.0.0",
+        "type": "range"
+      },
+      "/Users/hufuyi/mywork/saad/saadtw/node_modules/react-native-root-toast"
+    ]
+  ],
+  "_cnpm_publish_time": 1514448411617,
+  "_from": "react-native-root-siblings@>=3.0.0 <4.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-root-siblings@3.0.0",
+  "_inCache": true,
+  "_location": "/react-native-root-siblings",
+  "_nodeVersion": "6.11.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-root-siblings-3.0.0.tgz_1514448411541_0.4823755519464612"
+  },
+  "_npmUser": {
+    "name": "magicismight",
+    "email": "master@horcrux.cn"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-root-siblings@^3.0.0",
+    "scope": null,
+    "escapedName": "react-native-root-siblings",
+    "name": "react-native-root-siblings",
+    "rawSpec": "^3.0.0",
+    "spec": ">=3.0.0 <4.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/react-native-root-toast"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-root-siblings/download/react-native-root-siblings-3.0.0.tgz",
+  "_shasum": "049f584f83ec5c18f16c5cfe1ef9aada26f685bf",
+  "_shrinkwrap": null,
+  "_spec": "react-native-root-siblings@^3.0.0",
+  "_where": "/Users/hufuyi/mywork/saad/saadtw/node_modules/react-native-root-toast",
+  "bugs": {
+    "url": "https://github.com/magicismight/react-native-root-siblings/issues"
+  },
+  "dependencies": {
+    "static-container": "^1.0.0"
+  },
+  "description": "react native root sibling elements manager",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "049f584f83ec5c18f16c5cfe1ef9aada26f685bf",
+    "size": 3384,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-root-siblings/download/react-native-root-siblings-3.0.0.tgz"
+  },
+  "gitHead": "4bc5fff68e8dc74e8cafefbd44ae4662dcdf2271",
+  "homepage": "https://github.com/magicismight/react-native-root-siblings#readme",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "magicismight",
+      "email": "530337602@qq.com"
+    }
+  ],
+  "name": "react-native-root-siblings",
+  "optionalDependencies": {},
+  "publish_time": 1514448411617,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/magicismight/react-native-root-siblings.git"
+  },
+  "version": "3.0.0"
+}

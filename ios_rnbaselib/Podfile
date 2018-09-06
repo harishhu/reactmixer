@@ -1,0 +1,14 @@
+#use_frameworks!
+platform :ios, '7.0'
+
+target ‘rnbaselib’ do
+
+pod 'AFNetworking', '~> 3.0'
+pod 'SDWebImage', '~> 4.2.3'
+pod 'Masonry', '~> 0.6.3'
+#pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
+#pod 'React', path: '../node_modules/react-native', subspecs: [
+#  'BatchedBridge',
+#]
+
+end

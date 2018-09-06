@@ -1,0 +1,50 @@
+.taskheader{
+  width: 100%;
+
+  line-height: normal;
+  text-align: center;
+  position: relative;
+
+  background-color: #ffffff;
+
+  tintitem{
+    display: block;
+    position: absolute;
+
+    line-height: 14px;
+
+    text-align: center;
+
+    a{
+      font-size: 12px;
+    }
+
+    img{
+      line-height: 14px;
+    }
+
+    img[src=""], img:not([src]){
+      opacity:0;
+    }
+  }
+
+  headerdesc{
+    width: 100%;
+    display: block;
+    position: absolute;
+
+    text-align: center;
+
+    line-height: 20px;
+
+    a{
+      font-size: 11px;
+      color: #999999;
+    }
+
+    .activedegree{
+      font-size: 12px;
+      color: #666666;
+    }
+  }
+}

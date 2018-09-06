@@ -1,0 +1,39 @@
+.gallery{
+  width: 100%;
+  height: 100%;
+
+  // &:before{
+  //   content:'';
+  //   display:inline-block;
+  //   height:100%;
+  //   vertical-align: middle;
+  // }
+
+  item{
+    display: inline-block;
+    width: 33.3%;
+
+    text-align: center;
+    margin-top: 9%;
+    line-height: 16px;
+
+    @media (device-width:320px) {
+      margin-top: 9%;
+    }
+
+    .name{
+      color: white;
+      font-size: 14px;
+    }
+
+    .extrainfo{
+      color: #d9f1ff;
+      font-size: 10px;
+    }
+
+    img{
+      width: 54%;
+      height: 54%;
+    }
+  }
+}

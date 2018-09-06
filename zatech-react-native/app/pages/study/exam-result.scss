@@ -1,0 +1,189 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.examresult{
+  text-align: center;
+
+  .header{
+    height: 206.5px;
+    position: relative;
+
+    .imggroup{
+      display: inline-block;
+      width: 214.885787px;
+      height: 206.5px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(./res/pass-img-1.png);
+
+      .space{
+        height: 40%;
+      }
+
+      .percentvalue{
+        font-size: 35px;
+        color: #ffffff;
+      }
+
+      a{
+      //  margin-left: 5px;
+      }
+    }
+
+    .imggroup[type='N']{
+      display: inline-block;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      margin-top: 15px;
+      width: 128.462209px;
+      height: 180px;
+
+      background-position: 0px -28px;
+      background-image: url(./res/unpass-1.png);
+
+      .space{
+        height: 52%;
+      }
+
+      .percentvalue{
+        font-size: 35px;
+        color: #ffffff;
+      }
+
+      a{
+      //  margin-left: 5px;
+      }
+    }
+  }
+
+  .resultinfo{
+    font-size: 25px;
+    color: #333333;
+
+    font[type='Y']{
+      color: #00a4ff;
+    }
+
+    font[type='N']{
+      color: #ff0c0c;
+    }
+  }
+
+  .resultdesc{
+    font-size: 14px;
+    color: #b0ada2;
+  }
+
+  .examinfogroup{
+    height: 130px;
+
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+
+    border-radius: 5px;
+
+    border-width: 1px;
+    border-color: #e6e6e6;
+    border-style: solid;
+
+    text-align: center;
+
+    line-height: 130px;
+
+    .itemgroup1{
+      line-height: 26px;
+      text-align: left;
+
+      display: inline-block;
+      vertical-align: middle;
+
+      font-size: 15px;
+      color: #666666;
+
+      .item-keyvalue{
+        .seperator{
+          display: inline-block;
+          width: 25px;
+        }
+
+        a{
+          text-decoration:none;
+        }
+
+        a:link,a:visited,a:hover,a:active {
+          color:#666666;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+
+  .buttongroupexam{
+    margin-top: 43px;
+
+    .seperatorexam{
+      display: inline-block;
+      width: 5%;
+      height: 10px;
+    }
+
+    button{
+      width: 42.5%;
+      height: 45px;
+
+      font-size: 17px;
+
+      background-color: #00a4ff;
+      color: white;
+
+      border-style: solid;
+      border-color: #00a4ff;
+
+      border-radius: 3px;
+      border-width: 1px;
+      outline: none;
+    }
+  }
+
+  .buttongroupexam[type='exam']{
+    display: none;
+  }
+
+  .buttongroup{
+    margin-top: 43px;
+    display: none;
+
+    .seperatorexam{
+      display: inline-block;
+      width: 5%;
+      height: 10px;
+    }
+
+    button{
+      width: 90%;
+      height: 45px;
+
+      font-size: 17px;
+
+      background-color: #00a4ff;
+      color: white;
+
+      border-style: solid;
+      border-color: #00a4ff;
+
+      border-radius: 3px;
+      border-width: 1px;
+      outline: none;
+    }
+  }
+
+  .buttongroup[type='exam']{
+    display: block;
+  }
+}

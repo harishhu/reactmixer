@@ -1,0 +1,5 @@
+{
+  "name":"appbase",
+  "version":"1.0.0",
+  "main":"./appbase.js"
+}

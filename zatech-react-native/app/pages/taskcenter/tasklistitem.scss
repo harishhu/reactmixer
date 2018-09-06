@@ -1,0 +1,115 @@
+
+.tasklistitem{
+  width: 100%;
+  height: 100%;
+
+  line-height: normal;
+  background-color: #ffffff;
+
+  .itemicon{
+    float: left;
+  }
+
+  .titlegroup{
+    display: inline-block;
+    width: 160px;
+
+    line-height: 18px;
+
+    //background-color: blue;
+
+    title{
+      display: inline;
+      text-align: left;
+      color: #333333;
+    }
+
+    desc{
+      display: block;
+      text-align: left;
+      color: #999999;
+
+      word-break:keep-all;/* 不换行 */
+      white-space:nowrap;/* 不换行 */
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    }
+
+    goldinfo{
+      display: block;
+
+      a{
+        color: #fa9b28;
+        margin: 0 auto;
+
+        vertical-align: top;
+      }
+    }
+  }
+
+  itemright{
+    float: right;
+    display: block;
+
+    margin-top: 18px;
+    margin-right: 10px;
+
+    .itemgoto{
+      background-color: #00a4f1;
+      color: white;
+
+      border-width: 0px;
+      outline: none;
+
+      text-align: center;
+
+      a{
+        vertical-align: middle;
+      }
+    }
+
+    .itemgotodraw{
+      background-color: white;
+      color: #00a4f1;
+
+      border-width: 1px;
+      border-style: solid;
+      border-color: #00a4f1;
+      outline: none;
+
+      text-align: center;
+
+      a{
+        vertical-align: middle;
+      }
+    }
+
+    .itemfinish{
+      width: 85px;
+      text-align: center;
+    }
+
+    taskprogress{
+      display: block;
+      text-align: center;
+
+      .progress{
+        display: inline;
+        color: #666666;
+      }
+
+      .total{
+        display: inline;
+        color:#cccccc;
+      }
+    }
+
+    .finishtext{
+      text-align: center;
+      vertical-align: middle;
+
+      color: #999999;
+      font-size: 14px;
+    }
+  }
+}
