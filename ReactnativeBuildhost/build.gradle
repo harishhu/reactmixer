@@ -23,7 +23,7 @@ allprojects {
 
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npmm
-//            url "D:/work-src/zatech-insurance/zaki-app-sdk/android"
+//            url "D:/work-src/reactmixer-insurance/zaki-app-sdk/android"
             url '/Users/hufuyi/mywork/rnappsdk/zakj-app-sdk/android'
         }
     }

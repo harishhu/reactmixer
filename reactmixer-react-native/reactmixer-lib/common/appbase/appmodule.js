@@ -1,6 +1,6 @@
 import {
     ZAString
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 class AppModule{
     constructor(){

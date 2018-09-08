@@ -1,3 +1,4 @@
+// MapView.js
 import React, { Component } from 'react';
 import { requireNativeComponent } from 'react-native';
 import PropTypes from 'prop-types';
@@ -10,63 +11,63 @@ import {
   StyleSheet,
   Text,
   View,
-  Button,
   TouchableWithoutFeedback
 } from 'react-native';
 
 import {
   PickerView,
   ZAComponent
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 var defaultItemHeight = Platform.OS == 'ios' ? 216 : 160;
 
-class SAPickerWidget extends Component {
+class MultiPicker extends Component {
   static propTypes = {
   };
 
   constructor(props){
     super(props);
-    this.selindex = this.props.defaultIndex;
   }
 
-  /**
-   * @param
-   * items : picker data array
-   * defaultindex: default index
-   * pickcallback: 选中回调
-  */
-  static showPicker(items, defaultindex, pickcallback){
-    if(defaultindex == undefined || items.length <= defaultindex){
-      defaultindex = 0;
-    }
-
+  static showMultiPicker(items, datachangecallback, pickcallback){
     ZAComponent.navigator.setGoBackCallback(()=>{
-      SAPickerWidget.hidePicker();
+      MultiPicker.hideMultiPicker();
     });
 
-    SAPickerWidget.current = new RootSiblings(<SAPickerWidget items={items} defaultIndex={defaultindex} onPickItem={pickcallback}></SAPickerWidget>);
-    return SAPickerWidget.current;
+    MultiPicker.current = new RootSiblings(<MultiPicker items={items} columnDataChange={datachangecallback} onPickMultiItems={pickcallback}></MultiPicker>);
+    return MultiPicker.current;
   }
 
-  static hidePicker(){
+  static hideMultiPicker(){
     ZAComponent.navigator.setGoBackCallback(undefined);
 
-    if(SAPickerWidget.current){
-      SAPickerWidget.current.destroy();
-      SAPickerWidget.current = undefined;
+    if(MultiPicker.current){
+      MultiPicker.current.destroy();
+      MultiPicker.current = undefined;
     }
   }
 
   onChange(column, index){
-    this.selindex = index;
+    if(this.props.columnDataChange){
+      this.props.columnDataChange(this, column, index);
+    }
+  }
+
+  updateColumnItems(column, items){
+    // alert('column = ' + column + ' items = ' + items.length)
+    this.refs['pickitem' + column].updateItems(items);
   }
 
   onTitleClick(cancel){
-    SAPickerWidget.hidePicker();
+    MultiPicker.hideMultiPicker();
 
-    if(!cancel && this.props.onPickItem){
-      this.props.onPickItem(this.selindex, this.props.items);
+    if(!cancel && this.props.onPickMultiItems){
+      this.indexarray = [];
+      for(index = 0; index < this.props.items.length; index++){
+        this.indexarray.push(this.refs['pickitem' + index].selindex);
+      }
+
+      this.props.onPickMultiItems(this.indexarray, this.props.items);
     }
   }
 
@@ -94,8 +95,22 @@ class SAPickerWidget extends Component {
             {zastring.strings.alert_rightTitle}
           </Text>
         </View>
-        <PickerView items={this.props.items} column={0}
-                  style={{backgroundColor:'#fff', width:'100%', height:defaultItemHeight}} onChange={this.onChange.bind(this)}/>
+        <View style={
+          {
+            height: defaultItemHeight,
+            width:'100%',
+            flexDirection:'row'
+          }
+        }>
+          {
+            this.props.items.map((item, index)=>{
+              return (
+                <PickerView ref={'pickitem' + index} key={index} items={item} column={index}
+                  style={{backgroundColor:'#fff', flex: 1, height:'100%'}} onChange={this.onChange.bind(this)}/>
+              )
+            })
+          }
+        </View>
       </View>
     )
   }
@@ -137,4 +152,4 @@ const styles = StyleSheet.create({
   }
 });
 
-module.exports = SAPickerWidget;
+module.exports = MultiPicker;

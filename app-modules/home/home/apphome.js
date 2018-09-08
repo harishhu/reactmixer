@@ -14,7 +14,7 @@ import {
     AutoTextView,
     TabControl,
     AppModuleManager
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 const placeholderImage = require('./res/首页-banner.png');
 

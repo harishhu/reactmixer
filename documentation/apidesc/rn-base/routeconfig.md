@@ -2,7 +2,7 @@
 ```javascript
 import {
     ZANavigator
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 //路由页面配置
 var PageRouter = {

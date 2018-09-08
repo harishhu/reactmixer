@@ -11,7 +11,7 @@
 
 'use strict';
 //add by harish.hu - 2018-07-24
-const zakjbuildhelper = require('./../../../../zatech-react-native/zatech-build/buildhelper.js');
+const zakjbuildhelper = require('./../../../../reactmixer-react-native/reactmixer-build/buildhelper.js');
 
 var _extends = Object.assign || function (target) {
   for (var i = 1; i < arguments.length; i++) {

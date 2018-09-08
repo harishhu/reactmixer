@@ -3,7 +3,7 @@ import React from 'react';
 
 import {
     ZADataControl
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 export default class LoginDataControl extends ZADataControl{
   static defaultProps = {

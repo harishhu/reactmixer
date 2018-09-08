@@ -1,7 +1,7 @@
 import {
   httpresultcodes,
   RequestItemBase
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 import NativeInterface from './../appbase/nativeinterface';
 
 let sendByNative = true;

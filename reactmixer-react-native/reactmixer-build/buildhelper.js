@@ -14,8 +14,8 @@ let fixPathConfig = {
     "/node_modules/react/index.js" : 49000,
     "/node_modules/react-native/Libraries/Image/resolveAssetSource.js": 49001,
     "\\node_modules\\react-native\\Libraries\\Image\\resolveAssetSource.js": 49001,
-    "\\zatech-react-native\\entry.js" : 49002,
-    "/zatech-react-native/entry.js" : 49002,
+    "\\reactmixer-react-native\\entry.js" : 49002,
+    "/reactmixer-react-native/entry.js" : 49002,
     "\node_modules\react-native\Libraries\react-native\react-native-implementation.js" : 49003,
     "\\node_modules\\react-native\\Libraries\\react-native\\react-native-implementation.js" : 49003
 }

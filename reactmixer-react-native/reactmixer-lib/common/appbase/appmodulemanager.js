@@ -6,7 +6,7 @@ import {
     ZANavigator,
     ZAString,
     Utils
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 const buildbaseaddr = 50000;
 let ishook = false;

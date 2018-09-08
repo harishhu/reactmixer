@@ -10,7 +10,7 @@
 
 'use strict';
 //add by harish.hu - 2018-07-24 -11111
-const zakjbuildhelper = require('./../../../zatech-react-native/zatech-build/buildhelper.js');
+const zakjbuildhelper = require('./../../../reactmixer-react-native/reactmixer-build/buildhelper.js');
 
 const log = require('../util/log').out('bundle');
 /* $FlowFixMe(site=react_native_oss) */

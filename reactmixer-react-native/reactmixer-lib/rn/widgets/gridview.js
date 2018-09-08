@@ -8,7 +8,7 @@ import {
 
 import {
     TableView
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import PropTypes from 'prop-types';
 import {ViewStylePropTypes} from 'react-native/Libraries/Components/View/ViewStylePropTypes';

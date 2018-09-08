@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import {
     ZAComponent,
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import {
   StyleSheet,

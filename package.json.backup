@@ -12,7 +12,7 @@
     "react-native": "0.55.3",
     "react-native-circular-progress": "^0.2.0",
     "react-native-progress": "^3.4.0",
-    "zatech-react-native": "1.0.8"
+    "reactmixer-react-native": "1.0.8"
   },
   "devDependencies": {
     "archiver": "^2.1.1",

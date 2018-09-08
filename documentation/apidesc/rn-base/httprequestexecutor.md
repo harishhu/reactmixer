@@ -8,7 +8,7 @@ HttpRequestExecutor主要包括三个功能：
 ```javascript
 import {
     HttpRequestExecutor
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 //set function to generate default http headers
 HttpRequestExecutor.defaultHttpHeadersConstructor(function(){

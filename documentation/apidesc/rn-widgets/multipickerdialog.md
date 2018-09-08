@@ -13,7 +13,7 @@ updateColumnItems(column, items)|更新指定列的数据
 ```javascript
 import {
     MultiPickerDialog
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
  let items = [[
           '111',

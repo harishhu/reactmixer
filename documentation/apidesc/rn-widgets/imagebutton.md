@@ -3,7 +3,7 @@
 ```javascript
 import {
     ImageButton
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 <ImageButton style={styles.loginbutton}
     image={require('./res/pic_login_but.png')}

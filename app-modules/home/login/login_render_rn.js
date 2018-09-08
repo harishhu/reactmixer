@@ -18,7 +18,7 @@ import {
     ZAComponent,
     Utils,
     ZAString
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import LoginDataControl from './logindatacontrol';
 

@@ -3,7 +3,7 @@
 ```javascript
 import {
     Dialog
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 let dialog = new Dialog();
 dialog.setContentRender(function(){

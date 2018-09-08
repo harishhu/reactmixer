@@ -8,7 +8,7 @@ import {
 
 import {
     UIBase
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 var ScreenWidth = Dimensions.get('window').width;
 var ScreenHeight = Dimensions.get('window').height;

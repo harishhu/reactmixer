@@ -3,7 +3,7 @@
 ```javascript
 import {
     FlexButton
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
   <FlexButton
     ref='flexbutton'

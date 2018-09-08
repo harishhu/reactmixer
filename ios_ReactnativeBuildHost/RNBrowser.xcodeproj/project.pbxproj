@@ -383,7 +383,7 @@
 				INFOPLIST_FILE = RNBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zatech.insurance.rnbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactmixer.insurance.rnbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "acae5e23-b13f-4cf9-862e-586ba65c6e71";
 				PROVISIONING_PROFILE_SPECIFIER = "zakj-rnbrowser";
@@ -404,7 +404,7 @@
 				INFOPLIST_FILE = RNBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zatech.insurance.rnbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactmixer.insurance.rnbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "acae5e23-b13f-4cf9-862e-586ba65c6e71";
 				PROVISIONING_PROFILE_SPECIFIER = "zakj-rnbrowser";

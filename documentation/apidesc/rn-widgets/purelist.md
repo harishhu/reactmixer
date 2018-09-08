@@ -26,7 +26,7 @@ ListFooterComponent|设置列表尾部组件
 ```javascript
 import {
     PureList
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
  renderListTab = (index)=>{
     let ll = [];

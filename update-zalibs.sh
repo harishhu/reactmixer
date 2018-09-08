@@ -1,2 +1,2 @@
-rm -rf node_modules/zatech-react-native
-cp -R zatech-react-native node_modules/
+rm -rf node_modules/reactmixer-react-native
+cp -R reactmixer-react-native node_modules/

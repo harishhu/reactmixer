@@ -16,7 +16,7 @@ import {
     ZAKJSource,
     HttpRequestExecutor,
     AppModuleManager,
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import NativeInterface from './../../../common/appbase/nativeinterface'
 import appconfig from './../../../common/appbase/appconfig'

@@ -14,7 +14,7 @@ import {
 
 import {
     AppConfig
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import NaviActionBar from './naviactionbar';
 import NaviStatusBar from './navistatusbar';

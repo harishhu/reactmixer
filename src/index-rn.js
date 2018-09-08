@@ -1,6 +1,6 @@
 import {
   AppModuleManager
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 AppModuleManager.initAppEnv();
 

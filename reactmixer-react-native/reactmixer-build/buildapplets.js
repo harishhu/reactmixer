@@ -17,11 +17,11 @@ class zakjlibs {
     }
     
     checkZAReactNativeDir() {
-        let filepath = './node_modules/zatech-react-native';
+        let filepath = './node_modules/reactmixer-react-native';
         fs.exists(filepath, (exists) => {
             if (exists) {
-                console.log('begin to remove existing zatech-react-native files');
-                removeDir('./node_modules/zatech-react-native');
+                console.log('begin to remove existing reactmixer-react-native files');
+                removeDir('./node_modules/reactmixer-react-native');
                 console.log('remove success');
             }
             console.log('start downloading....');
@@ -41,7 +41,7 @@ class zakjlibs {
                         fs.createReadStream(filepath + '.zip').pipe(unzip.Extract({
                             path: './node_modules'
                         }));
-                        console.log("zatech-react-native library update finish");
+                        console.log("reactmixer-react-native library update finish");
                         fs.unlinkSync(filepath + '.zip');
                     });
                 });

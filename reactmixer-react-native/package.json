@@ -1,7 +1,7 @@
 {
-  "name": "zatech-react-native",
+  "name": "reactmixer-react-native",
   "version": "1.0.10",
-  "description": "the base library of zatech insurance line",
+  "description": "the base library of reactmixer",
   "main": "./entry.js",
   "author": "harish.hu",
   "license": "ISC",
@@ -10,6 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "zatech-react-native": "zatech-build/setupbuildenv.js"
+    "reactmixer-react-native": "reactmixer-build/setupbuildenv.js"
   }
 }

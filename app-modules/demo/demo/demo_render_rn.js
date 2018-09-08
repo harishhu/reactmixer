@@ -22,7 +22,7 @@ import {
     GridView,
     MultiPickerDialog,
     SADatePickerWidget
-  } from 'zatech-react-native';
+  } from 'reactmixer-react-native';
 
 var Dimensions = require('Dimensions');
 var ScreenWidth = Dimensions.get('window').width;

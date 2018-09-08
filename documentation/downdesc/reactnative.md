@@ -16,7 +16,7 @@
 ## 1.1. React Mixer RN基础npm库
 name | version
 :- | :- 
-zatech-react-native|1.0.8
+reactmixer-react-native|1.0.8
 
 ## 1.1. Demo工程下载
 [点击下载]()

@@ -9,7 +9,7 @@ import {
     ZANavigator,
     AppModuleManager,
     AppModule
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import language_chs from './language/zastring_chs';
 import language_cht from './language/zastring_cht';

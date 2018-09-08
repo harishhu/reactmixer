@@ -2,7 +2,7 @@ include ':app'
 
 //just set for development
 //include ':rnbaselib'
-//project(':rnbaselib').projectDir = new File("D:\\work-src\\zatech-insurance\\reactnativesdk\\reactnativeappsdk\\android\\android_rnbaselib")
+//project(':rnbaselib').projectDir = new File("D:\\work-src\\reactmixer-insurance\\reactnativesdk\\reactnativeappsdk\\android\\android_rnbaselib")
 //project(':rnbaselib').projectDir = new File("/Users/hufuyi/mywork/rnappsdk/react-mixer/android/android_rnbaselib")
 //
 //include ':ReactAndroid'

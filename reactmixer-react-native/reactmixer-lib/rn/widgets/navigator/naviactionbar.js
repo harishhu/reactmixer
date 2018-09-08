@@ -7,7 +7,7 @@ import {
 
 import {
     AppConfig
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 import NaviItemGroup from './naviitemgroup';
 

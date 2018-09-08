@@ -3,7 +3,7 @@ import LoginRequestItem from './loginrequestitem'
 import {
     AppConfig,
     RequestItemBase
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 class LoginDispatcher{
   userlogin(username, password, callback){

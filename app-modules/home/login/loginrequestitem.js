@@ -1,6 +1,6 @@
 import {
     RequestItemBase
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 class LoginRequestItem extends RequestItemBase{
   path_url = '/user/login';

@@ -26,7 +26,7 @@ headerItemRender|设置header item render，不使用默认，参数(item, inde
 ```javascript
 import {
     TabControl
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
     //tab数据项配置， title为标题，body为render component
      this.tabitems = [
       {

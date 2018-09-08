@@ -3,7 +3,7 @@
 ```javascript
 import {
     AlertDialog
-} from 'zatech-react-native';
+} from 'reactmixer-react-native';
 
 let dialog = new AlertDialog();
 //设置标题
