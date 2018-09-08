@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<io.zhongan.tech.rnbaselib.reactnative.rctwidgets.datapicker.RCTDatePickerView xmlns:android="http://schemas.android.com/apk/res/android"
+<hu.react.mixer.rnbaselib.reactnative.rctwidgets.datapicker.RCTDatePickerView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_gravity="center"
@@ -65,4 +65,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</io.zhongan.tech.rnbaselib.reactnative.rctwidgets.datapicker.RCTDatePickerView>
+</hu.react.mixer.rnbaselib.reactnative.rctwidgets.datapicker.RCTDatePickerView>

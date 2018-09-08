@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "io.zhongan.reactnativebuildhost"
+        applicationId "hu.reactmixer.reactnativebuildhost"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
@@ -35,13 +35,13 @@ dependencies {
     //comment as default, just import it before we need to build the base library of react android
  //   api project(':ReactAndroid')
 
-//    api ("com.facebook.react:react-native:0.55.3") {
-//        exclude group: 'com.android.support', module: 'appcompat-v7'
-//    }
-//    //aa11
-//    api "io.zhongan.tech:rnbaselib:1.0.4"
+    api ("com.facebook.react:react-native:0.55.3") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    //aa11
+    api "hu.react.mixer:rnbaselib:1.0.4"
 
-    api project(':rnbaselib')
+//    api project(':rnbaselib')
 
     implementation 'com.squareup.okhttp:okhttp:2.7.5'
     implementation 'com.android.support:multidex:1.0.2'

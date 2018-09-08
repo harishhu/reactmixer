@@ -70,7 +70,7 @@ static ZAKJFileCacheManager *sharedInstance = nil;
     self = [super init];
     if(self)
     {
-        _fileCacheQueue = dispatch_queue_create("com.zhongan.fileCacheThread", DISPATCH_QUEUE_SERIAL);
+        _fileCacheQueue = dispatch_queue_create("hu.reactmixer.fileCacheThread", DISPATCH_QUEUE_SERIAL);
     }
     return self;
 }

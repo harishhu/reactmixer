@@ -1,5 +1,5 @@
 #ZADataControl
-React Hybrid 所有的DataController必须派生自ZADataControl
+React Mixer 所有的DataController必须派生自ZADataControl
 
 函数名 | 参数 | 描述
 :-|:-|:-

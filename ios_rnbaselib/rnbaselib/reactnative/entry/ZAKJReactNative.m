@@ -2,7 +2,7 @@
 //  ReactNativeBaseViewController.m
 //  saadtw
 //
-//  Created by 胡付义 on 2018/1/2.
+//  Created by harishhu on 2018/1/2.
 //  Copyright © 2018年 Facebook. All rights reserved.
 //
 #import "ZAKJRCTInterface.h"
@@ -298,8 +298,8 @@ static ZAKJReactNative *instance = nil;
   //设置主题
   [mailPicker setSubject: title];
   //添加收件人
-  //    NSArray *toRecipients = [NSArray arrayWithObject: @"wanghan@zhongan.io"];
-//  NSArray *toRecipients = [NSArray arrayWithObject: @"wanghan@zhongan.io"];
+  //    NSArray *toRecipients = [NSArray arrayWithObject: @""];
+//  NSArray *toRecipients = [NSArray arrayWithObject: @""];
 //  [mailPicker setToRecipients: toRecipients];
   //    //添加抄送
   //    NSArray *ccRecipients = [NSArray arrayWithObjects:@"second@example.com", @"third@example.com", nil];
@@ -333,7 +333,7 @@ static ZAKJReactNative *instance = nil;
 {
   NSMutableString *mailUrl = [[NSMutableString alloc]init];
   //添加收件人
-//  NSArray *toRecipients = [NSArray arrayWithObject: @"wanghan@zhongan.io"];
+//  NSArray *toRecipients = [NSArray arrayWithObject: @""];
 //  [mailUrl appendFormat:@"mailto:%@", [toRecipients componentsJoinedByString:@","]];
   //    //添加抄送
   //    NSArray *ccRecipients = [NSArray arrayWithObjects:@"second@example.com", @"third@example.com", nil];

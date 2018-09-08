@@ -31,7 +31,7 @@ class AppHome extends ZAComponent{
   }
 
   initDemoRender() {
-    let targetmodule = 'io.zhongan.demo';
+    let targetmodule = 'hu.reactmixer.demo';
     AppModuleManager.installModule(targetmodule, () => {
       let routepage = AppModuleManager.getModuleRoutePage(targetmodule, 'DemoWidgets');
       if (routepage) {

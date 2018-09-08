@@ -8,11 +8,11 @@ class AppConfig {
   ENV_PRD = 'prd';
 
   hostMap = {
-    uat: "http://esell-uat.e-hqins.com/",
-    dev: "https://hq-app-dev.zhongan.io/",
-    test: "https://hq-app-test.zhongan.io/",
-    pre: "http://esell-pre.e-hqins.com/",
-    prd: "https://ibes.e-hqins.com/"
+    uat: "",
+    dev: "",
+    test: "",
+    pre: "",
+    prd: ""
   }
 
   constructor(){

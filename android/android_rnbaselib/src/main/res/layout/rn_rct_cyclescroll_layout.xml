@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<io.zhongan.tech.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout
+<hu.react.mixer.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <io.zhongan.tech.rnbaselib.reactnative.rctwidgets.banner.RCTCycleScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <hu.react.mixer.rnbaselib.reactnative.rctwidgets.banner.RCTCycleScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/rct_cyclescrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <io.zhongan.tech.rnbaselib.reactnative.rctwidgets.banner.BannerViewPager
+        <hu.react.mixer.rnbaselib.reactnative.rctwidgets.banner.BannerViewPager
             android:id="@+id/viewpager"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center" />
 
-        <io.zhongan.tech.rnbaselib.reactnative.rctwidgets.banner.CirclePageIndicator
+        <hu.react.mixer.rnbaselib.reactnative.rctwidgets.banner.CirclePageIndicator
             android:id="@+id/indicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,6 +23,6 @@
             android:layout_marginBottom="@dimen/my_item_icon"
             android:paddingTop="4dp"
             app:extraSpacing="6dp" />
-    </io.zhongan.tech.rnbaselib.reactnative.rctwidgets.banner.RCTCycleScrollView>
-</io.zhongan.tech.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout>
+    </hu.react.mixer.rnbaselib.reactnative.rctwidgets.banner.RCTCycleScrollView>
+</hu.react.mixer.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout>
 

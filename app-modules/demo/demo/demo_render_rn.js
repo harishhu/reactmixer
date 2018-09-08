@@ -62,7 +62,7 @@ export default class HomeRender extends ZAComponent{
 
   initNaviItems(){
     setTimeout(()=>{
-      this.navigator.setTitle('众安科技');
+      this.navigator.setTitle('  ReactMixer');
     }, 500);
     
     let item1 = {};

@@ -9,7 +9,7 @@
 
 # 1. Native工程集成RN框架SDK
 ## 1.1. SDK下载
-点击 [下载](./../../bin/react-hybrid-app-sdk.zip) SDK库文件，并解压缩
+点击 [下载](./../../bin/react-mixer-app-sdk.zip) SDK库文件，并解压缩
 
 ## 1.2. Android工程集成介绍
 在工程的build.gradle中配置本地maven库，url地址即为上面下载的SDK目录
@@ -28,7 +28,7 @@
     api ("com.facebook.react:react-native:0.55.3") {
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
-    api "io.zhongan.tech:rnbaselib:1.0.4"
+    api "hu.reactmixer.tech:rnbaselib:1.0.4"
     implementation 'com.squareup.okhttp:okhttp:2.7.5'
     implementation 'com.android.support:multidex:1.0.2'
 ```

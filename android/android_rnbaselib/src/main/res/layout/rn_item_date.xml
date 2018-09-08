@@ -17,7 +17,7 @@
                 android:background="@color/occBg"
                 android:layout_alignParentBottom="true"/>
         </RelativeLayout>
-        <io.zhongan.tech.rnbaselib.ui.calendar.widget.WheelView
+        <hu.react.mixer.rnbaselib.ui.calendar.widget.WheelView
             android:id="@+id/item_wv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

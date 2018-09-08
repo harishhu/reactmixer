@@ -2,7 +2,7 @@
 //  ZAHttpResult.h
 //  hengqinlifeapp
 //
-//  Created by 胡付义 on 2017/4/1.
+//  Created by harishhu on 2017/4/1.
 //  Copyright © 2017年 横琴人寿. All rights reserved.
 //
 

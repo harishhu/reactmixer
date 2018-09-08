@@ -1,25 +1,25 @@
 <!-- TOC -->
 
-- [1. React Hybrid ReactNative开发环境搭建](#1-React Hybrid reactnative开发环境搭建)
-    - [1.1. React Hybrid RN基础npm库](#11-React Hybrid rn基础npm库)
+- [1. React Mixer ReactNative开发环境搭建](#1-react-mixer-reactnative开发环境搭建)
+    - [1.1. React Mixer RN基础npm库](#11-react-mixer-rn基础npm库)
     - [1.1. Demo工程下载](#11-demo工程下载)
     - [1.2. 开发调试](#12-开发调试)
 
 <!-- /TOC -->
-# 1. React Hybrid ReactNative开发环境搭建
+# 1. React Mixer ReactNative开发环境搭建
 * 安装npm和node，具体方法自行百度
-* [点击下载](https://uat.zhongan.com/app/zatech/appsdk/zakjlib/zakj-reactnative-demoproject.zip) 基础工程
+* [点击下载]() 基础工程
 * 解压缩到指令目录并cd到该目录
 * 执行 npm install .
 * 执行 react-native start 启动服务
 
-## 1.1. React Hybrid RN基础npm库
+## 1.1. React Mixer RN基础npm库
 name | version
 :- | :- 
 zatech-react-native|1.0.8
 
 ## 1.1. Demo工程下载
-[点击下载](https://uat.zhongan.com/app/zatech/appsdk/zakjlib/zakj-reactnative-demoproject.zip)
+[点击下载]()
 
 
 ## 1.2. 开发调试

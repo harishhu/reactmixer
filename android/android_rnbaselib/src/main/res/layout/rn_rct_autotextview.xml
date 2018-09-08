@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<io.zhongan.tech.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout
+<hu.react.mixer.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <io.zhongan.tech.rnbaselib.reactnative.rctwidgets.autotext.RCTAutoTextView
+    <hu.react.mixer.rnbaselib.reactnative.rctwidgets.autotext.RCTAutoTextView
         android:id="@+id/rn_rct_autotextview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:background="@android:color/transparent"/>
-</io.zhongan.tech.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout>
+</hu.react.mixer.rnbaselib.reactnative.rctwidgets.RCTBaseFrameLayout>
 

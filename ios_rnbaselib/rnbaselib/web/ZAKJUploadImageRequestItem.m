@@ -2,7 +2,7 @@
 //  UploadImageRequestItem.m
 //  hengqinlifeapp
 //
-//  Created by 姚志飞 on 2017/5/2.
+//  Created by harishhu on 2017/5/2.
 //  Copyright © 2017年 横琴人寿. All rights reserved.
 //
 

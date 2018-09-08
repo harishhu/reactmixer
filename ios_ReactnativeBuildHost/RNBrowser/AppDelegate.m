@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  RNBrowser
 //
-//  Created by 胡付义 on 2018/6/8.
-//  Copyright © 2018年 众安科技. All rights reserved.
+//  Created by harishhu on 2018/6/8.
+//  Copyright © 2018年   ReactMixer. All rights reserved.
 //
 
 #import "AppDelegate.h"

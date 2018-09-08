@@ -31,7 +31,7 @@ class DemoModule extends AppModule{
      * return module name of module
     */
     getName(){
-        return 'io.zhongan.demo';
+        return 'hu.reactmixer.demo';
     }
     
     /**

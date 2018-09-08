@@ -3,7 +3,7 @@ var http = require('https');
 var unzip = require("unzip2");
 
 // App variables
-var file_url = 'https://uat.zhongan.com/app/zatech/appsdk/zakjlib/zatech-react-native.zip';
+var file_url = '';
 
 class zakjlibs{
   constructor(){

@@ -55,7 +55,7 @@ class LoginRenderRN extends ZAComponent{
    if(type == '1'){
      this.navigator.navigate('AppHome', 'test launch data');
    }else{
-     this.navigator.navigate('default', 'test launch data', 'io.zhongan.demo');
+     this.navigator.navigate('default', 'test launch data', 'hu.reactmixer.demo');
    }
   }
 

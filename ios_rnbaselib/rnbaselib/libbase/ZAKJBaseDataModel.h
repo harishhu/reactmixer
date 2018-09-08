@@ -2,7 +2,7 @@
 //  BaseDataModel.h
 //  hengqinlifeapp
 //
-//  Created by 胡付义 on 2017/3/28.
+//  Created by harishhu on 2017/3/28.
 //  Copyright © 2017年 横琴人寿. All rights reserved.
 //
 
