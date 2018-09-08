@@ -1,4 +1,4 @@
-class laohu{
+ss class laohu{
     test(){
         console.log('laohu print');
     }
