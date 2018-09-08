@@ -1,5 +1,5 @@
 #ZAComponent
-业务线所有路由页面必须派生自ZAComponent
+React Hybrid 所有路由页面必须派生自ZAComponent
 函数介绍:
 
 函数 | 参数 | 描述

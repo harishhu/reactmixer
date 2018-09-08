@@ -1,7 +1,7 @@
 ![](kejilogo.png)
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [保险业务线移动基础框架 - 概述](#保险业务线移动基础框架-概述)
+- [保险React Hybrid 移动基础框架 - 概述](#保险React Hybrid 移动基础框架-概述)
 	- [安装gitbook](#安装gitbook)
 	- [MaHua是什么?](#mahua是什么)
 	- [MaHua有哪些功能？](#mahua有哪些功能)
@@ -15,7 +15,7 @@
 ```
 
 https://uat.zhongan.com/app/zatech/appsdk/doc/index.html
-#保险业务线移动基础框架 - 概述
+#保险React Hybrid 移动基础框架 - 概述
 ##安装gitbook
 npm install gitbook-cli -g</br>
 gitbook init</br>

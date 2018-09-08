@@ -9,7 +9,7 @@
 
 # 1. Native工程集成RN框架SDK
 ## 1.1. SDK下载
-点击 [下载](./../res/rn-design.png) SDK库文件，并解压缩
+点击 [下载](./../../bin/react-hybrid-app-sdk.zip) SDK库文件，并解压缩
 
 ## 1.2. Android工程集成介绍
 在工程的build.gradle中配置本地maven库，url地址即为上面下载的SDK目录

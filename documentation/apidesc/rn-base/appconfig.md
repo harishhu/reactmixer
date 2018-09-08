@@ -1,5 +1,5 @@
 #App配置数据 - AppConfig
-AppConfig保存RN执行时所需的配置数据，目前业务线RN预定义的配置属性有:
+AppConfig保存RN执行时所需的配置数据，目前React Hybrid RN预定义的配置属性有:
 
 属性名 | 描述
 :- | :-
