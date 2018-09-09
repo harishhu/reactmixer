@@ -13,7 +13,7 @@
     "react-native-progress": "^3.4.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "reactmixer-react-native": "1.0.8"
+    "reactmixer-react-native": "1.0.0"
   },
   "devDependencies": {
     "archiver": "^2.1.1"

@@ -1,11 +1,21 @@
 
-# Summary
+# 什么是ReactMixer？
+ReactMixer是基于Facebook ReactNative扩展的基础框架，这个框架的设计是目标：
+ * 简化Native工程对ReactNative执行环境的集成
+ * 定义并实现一套完整的ReactNative JS基础库和控件
+ * 实现ReactNative小程序，每个Native工程只要集成ReactMixer，都可以安装，卸载，升级该小程序
+ * 三端融合，也就是说，编写玩一次ReactNative代码，可以选择编译成ReactNative Jsbundle被Android或者IOS应用加载运行，也可以选择编译成React H5
+
+ 目前，前三个功能都已经完成，三端融合目前还在进一步开发中。
+ 
+ 开发文档如下：
+ ReactNative小程序代码已经完成，目前文档还未更新
 
 * [概述](./documentation/README.md)
 * [开发环境介绍]()
-   * [RN JS开发环境搭建 & Demo工程下载](./documentation/downdesc/reactnative.md)
+   * [RN JS开发环境搭建 & 基础工程下载](./documentation/downdesc/reactnative.md)
    * [Native项目集成RN & SDK下载](./documentation/downdesc/native.md)
-   * [开发调试App介绍 & 下载](./documentation/downdesc/rnbrowser.md)
+   <!-- * [开发调试App介绍 & 下载](./documentation/downdesc/rnbrowser.md) -->
 * [RN官方接口文档](./documentation/apidesc/apidesc-fb.md)
 * [框架RN架构设计介绍]()
    * [总体架构介绍](./documentation/apidesc/rn-archi/rn-archi.md)

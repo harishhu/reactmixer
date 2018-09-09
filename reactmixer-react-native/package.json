@@ -1,6 +1,6 @@
 {
   "name": "reactmixer-react-native",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "description": "the base library of reactmixer",
   "main": "./entry.js",
   "author": "harish.hu",
