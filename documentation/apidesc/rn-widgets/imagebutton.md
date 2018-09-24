@@ -3,7 +3,7 @@
 ```javascript
 import {
     ImageButton
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 <ImageButton style={styles.loginbutton}
     image={require('./res/pic_login_but.png')}

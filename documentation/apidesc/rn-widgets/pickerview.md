@@ -3,7 +3,7 @@
 ```javascript
 import {
     PickerView
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 <PickerView 
   items={this.props.items}

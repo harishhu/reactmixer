@@ -3,7 +3,7 @@
 ```javascript
 import {
     Dialog
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 let dialog = new Dialog();
 dialog.setContentRender(function(){

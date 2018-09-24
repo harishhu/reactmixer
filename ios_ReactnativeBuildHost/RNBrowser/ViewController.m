@@ -180,7 +180,7 @@
     NSLog(@"open rnserver = %@", rnserver);
     
     ZAKJReactNativeViewController *vc = [[ZAKJReactNativeViewController alloc]init];
-    vc.modulename = @"hu.reactmixer.home";
+    vc.modulename = @"home";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

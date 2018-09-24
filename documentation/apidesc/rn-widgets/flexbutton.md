@@ -3,7 +3,7 @@
 ```javascript
 import {
     FlexButton
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
   <FlexButton
     ref='flexbutton'

@@ -4,7 +4,7 @@
 ```javascript
 import {
     AutoTextView
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 textItems = ['test1', 'test2', 'test3'];
 

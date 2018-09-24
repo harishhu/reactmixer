@@ -3,7 +3,7 @@
 ```javascript
 import {
     RequestItemBase
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 class LoginRequestItem extends RequestItemBase{
   path_url = '/user/login';
@@ -40,7 +40,7 @@ import LoginRequestItem from './loginrequestitem'
 import {
     AppConfig,
     RequestItemBase
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 class LoginDispatcher{
   userlogin(username, password, callback){

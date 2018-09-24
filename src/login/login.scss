@@ -1,0 +1,39 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#login{
+  input{
+    border-width: 0px;
+    width: 60%;
+    margin-right: 0px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 24px;
+    vertical-align:middle;
+  }
+
+  .loginbutton{
+    border-width: 0px;
+    width: 320px;
+    height: 60px;
+
+    background-color: rgba(0,0,0,0);
+
+    background-image: url(./res/pic_login_but.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    outline: none;
+
+    :focus{
+      border-width: 0px;
+    }
+
+    span{
+      color: white;
+      font-size: 18px;
+    }
+  }
+}

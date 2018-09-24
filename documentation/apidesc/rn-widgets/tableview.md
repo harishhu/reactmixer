@@ -21,7 +21,7 @@ customStyle|自定义样式，详见参考代码
 ```javascript
 import {
     TableView
-  } from 'reactmixer-react-native';
+  } = global.reactmixer;
 
 renderTabTable = (index)=>{
     //表格标题数组

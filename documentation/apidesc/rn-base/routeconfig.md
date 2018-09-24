@@ -2,7 +2,7 @@
 ```javascript
 import {
     ZANavigator
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 //路由页面配置
 var PageRouter = {

@@ -3,7 +3,7 @@
 ```javascript
 import {
     AlertDialog
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 let dialog = new AlertDialog();
 //设置标题

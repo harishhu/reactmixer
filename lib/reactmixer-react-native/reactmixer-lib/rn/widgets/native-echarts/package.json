@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "native-echarts@0.4.0",
+      "/Users/yaozhifei/Desktop/saad-prj-taiwan"
+    ]
+  ],
+  "_from": "native-echarts@0.4.0",
+  "_id": "native-echarts@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-y384+25sLRzT8Ron6U73QJK0vTg=",
+  "_location": "/native-echarts",
+  "_phantomChildren": {
+    "zrender": "3.7.4"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "native-echarts@0.4.0",
+    "name": "native-echarts",
+    "escapedName": "native-echarts",
+    "rawSpec": "0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "0.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/native-echarts/download/native-echarts-0.4.0.tgz",
+  "_spec": "0.4.0",
+  "_where": "/Users/yaozhifei/Desktop/saad-prj-taiwan",
+  "author": {
+    "name": "somonus"
+  },
+  "bugs": {
+    "url": "https://github.com/somonus/react-native-echarts/issues"
+  },
+  "dependencies": {
+    "echarts": "3.2.3"
+  },
+  "description": "echarts for react-native",
+  "directories": {
+    "example": "example"
+  },
+  "homepage": "https://github.com/somonus/react-native-echarts#readme",
+  "keywords": [
+    "react-native",
+    "echarts",
+    "chart",
+    "charts"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "native-echarts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somonus/react-native-echarts.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.0"
+}

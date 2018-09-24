@@ -1,0 +1,15 @@
+{
+  "name": "reactmixer-react-native",
+  "version": "1.0.0",
+  "description": "the base library of reactmixer",
+  "main": "",
+  "author": "harish.hu",
+  "license": "ISC",
+  "registry":"http://registry.npmjs.org/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "reactmixer-react-native": "reactmixer-build/setupbuildenv.js"
+  }
+}

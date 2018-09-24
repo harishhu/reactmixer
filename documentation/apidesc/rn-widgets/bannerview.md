@@ -4,7 +4,7 @@
 ```javascript
 import {
     BannerView
-} from 'reactmixer-react-native';
+} = global.reactmixer;
 
 imageURLStringsGroup = ["http://img05.tooopen.com/images/20150114/sy_79162752233.jpg",
     "http://test.gfis.cn/api/file/get?url=1514444558748.jpg","http://img05.tooopen.com/images/20150114/sy_79162752233.jpg",
