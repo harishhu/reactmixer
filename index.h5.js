@@ -27,9 +27,9 @@
 import ReactMixer from './lib/reactmixer-react-native/entry-h5';
 
 import home from './src/app-modules/home';
-//import demo from './app-modules/demo';
+import demo from './src/app-modules/demo';
 
-let {AppModuleManager, ZANavigator} = global.reactmixer;
+const {AppModuleManager, ZANavigator} = global.reactmixer;
 
 // console.log('ZAComponent = ' + ZAComponent);
   

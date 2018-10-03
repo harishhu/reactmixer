@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-let {
+const {
     AppModuleManager, 
     AppModule
 } = global.reactmixer;
 
-// import language_chs from './language/zastring_chs';
-// import language_cht from './language/zastring_cht';
+import language_chs from './language/zastring_chs';
+import language_cht from './language/zastring_cht';
 
 // import DemoLogin from './login/login_render_rn';
 // import DemoLoginDataControl from './login/logindatacontrol';
 
 // import AppHome from './home/apphome';
-import Test from './test';
+import Test from './login/login';
 
 //set background color, title size & color for action bar
 // AppConfig.actionBarStyle = {
@@ -50,7 +50,7 @@ class HomeModule extends AppModule{
             Test:{
                 render: Test
             }
-          }
+        }
     }
 
     /**
@@ -58,9 +58,9 @@ class HomeModule extends AppModule{
     */
     entry(){
          //config languages and set default one
-        //  this.registerLangSource('chs', language_chs);
-        //  this.registerLangSource('cht', language_cht);
-        //  this.setDefaultLang('chs');
+         this.registerLangSource('chs', language_chs);
+         this.registerLangSource('cht', language_cht);
+         this.setDefaultLang('chs');
  
         //  //set default http handler
         //  this.setHttpHeadersGenerator(function () {

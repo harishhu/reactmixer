@@ -1,23 +1,29 @@
 import React from 'react';
 
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Button,
-  NativeModules,
-  Image,
-  Dimensions,
-  TextInput
-} from 'react-native';
+// import {
+//   Platform,
+//   StyleSheet,
+//   Text,
+//   View,
+//   Button,
+//   NativeModules,
+//   Image,
+//   Dimensions,
+//   TextInput
+// } from 'react-native';
 
-let {
-    FlexButton,
-    ImageButton,
+const {
+    // FlexButton,
+    // ImageButton,
     ZAComponent,
     Utils,
-    ZAString
+    ZAString,
+    View,
+    Text,
+    Platform,
+    StyleSheet,
+    TextInput,
+    Dimensions
 } = global.reactmixer;
 
 import LoginDataControl from './logindatacontrol';
@@ -94,6 +100,7 @@ class LoginRenderRN extends ZAComponent{
            onChangeText={(text) => this.phonePassword = text}
            underlineColorAndroid='transparent'
          />
+         
          <View style={{height:20}}>
          </View>
 
@@ -101,7 +108,7 @@ class LoginRenderRN extends ZAComponent{
            {
              width:'100%', flexDirection: 'row',justifyContent : 'center',
              display:this.props.hideLoginButton ? 'none': 'flex'
-         }
+           }
          }>
            <ImageButton style={styles.loginbutton}
              image={require('./res/pic_login_but.png')}
@@ -115,7 +122,7 @@ class LoginRenderRN extends ZAComponent{
            {
              width:'100%', flexDirection: 'row',justifyContent : 'center',
              display:this.props.hideLoginButton ? 'none': 'flex'
-         }
+           }
          }>
            <FlexButton style={styles.flexbutton}
              image={require('./res/pic_login_but.png')}

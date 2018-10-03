@@ -8,7 +8,7 @@ import {
   Text
 } from 'react-native';
 
-let {
+const {
     BannerView,
     ZAComponent,
     AutoTextView,

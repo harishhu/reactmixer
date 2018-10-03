@@ -1,32 +1,32 @@
 import React from 'react';
 
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Picker,
-  Button,
-  ScrollView,
-} from 'react-native';
-
-import {
-    TabControl,
-    SinglePickerDialog,
-    AlertDialog,
-    SelectDialog,
-    Dialog,
-    PureList,
-    TableView,
+const {
+    //TabControl,
+    // SinglePickerDialog,
+    // AlertDialog,
+    // SelectDialog,
+    // Dialog,
+    // PureList,
+    // TableView,
+    // ZAComponent,
+    // GridView,
+    // MultiPickerDialog,
+    // SADatePickerWidget,
+    StyleSheet,
+    Text,
+    View,
+    Button,
     ZAComponent,
-    GridView,
-    MultiPickerDialog,
-    SADatePickerWidget
-  } = global.reactmixer;
+    Dimensions,
+    TabControl,
+    PureList,
+    TableView
+} = global.reactmixer;
 
-var Dimensions = require('Dimensions');
 var ScreenWidth = Dimensions.get('window').width;
 var ScreenHeight = Dimensions.get('window').height;
+
+//console.log('tabcontrol = ' + TabControl);
 
 export default class HomeRender extends ZAComponent{
   constructor(props){
@@ -47,17 +47,36 @@ export default class HomeRender extends ZAComponent{
       },
       {
         title: '控件',
-        body: this.renderTabControls.bind(this)
+        body: this.renderTest
       },
       {
         title: '网格',
-        body: this.renderGridLayout
+        body: this.renderTest
       }
     ]
+    
+    this.initNaviItems();
+  }
 
-   this.initNaviItems();
-
-  // alert(this.zastrings.login_button_title);
+  renderTest(index){
+    return (
+      <View key={index}>
+       <Button style={
+        {
+          width: 200,
+          height: 100,
+          backgroundColor:'gray'
+        }
+      } text={'test '+ index}/>
+      <Button style={
+        {
+          width: 200,
+          height: 100,
+          backgroundColor:'gray'
+        }
+      } text={'test '+ index}/>
+      </View>
+    )
   }
 
   initNaviItems(){
@@ -72,13 +91,13 @@ export default class HomeRender extends ZAComponent{
       if(this.state.tabdirection == 'top'){
         this.setState(
           {
-            tabdirection:'bottom'
+            tabdirection: 'bottom'
           }
         )
       }else{
         this.setState(
           {
-            tabdirection:'top'
+            tabdirection: 'top'
           }
         )
       }
@@ -88,61 +107,61 @@ export default class HomeRender extends ZAComponent{
     item2.name = '返回数据';
     // item2.interval = 20;
     item2.callback = ()=>{
-       this.navigator.setBackResultData('result data from test home page');      
+      this.navigator.setBackResultData('result data from test home page');      
     }
 
     this.navigator.setRightNaviItems([item1, item2]);
   }
   
-  renderGridLayout = (index)=>{
-    let datasource = [];
-    for(let i = 0; i < 13; i++){
-      datasource.push('item ' + i);
-    }
+  // renderGridLayout = (index)=>{
+  //   let datasource = [];
+  //   for(let i = 0; i < 13; i++){
+  //     datasource.push('item ' + i);
+  //   }
 
-    let renderitem = function(row, column, item){
-      return (
-        <Text>{"data:" + item}</Text>        
-      )
-    }
+  //   let renderitem = function(row, column, item){
+  //     return (
+  //       <Text>{"data:" + item}</Text>        
+  //     )
+  //   }
 
-    return (
-      <View key={index} style={
-        {
-          width:'100%',
-          height: 300
-        }
-      }>
-        <Button onPress={()=>{
-          datasource.splice(0, datasource.length);
-          for(i = 0; i < 5; i++){
-            datasource.push('new item ' + i);
-          }
+  //   return (
+  //     <View key={index} style={
+  //       {
+  //         width:'100%',
+  //         height: 300
+  //       }
+  //     }>
+  //       <Button onPress={()=>{
+  //         datasource.splice(0, datasource.length);
+  //         for(i = 0; i < 5; i++){
+  //           datasource.push('new item ' + i);
+  //         }
 
-          this.refs.gridview.updateGridView();
-      }} title='update grid view'/>
-        <GridView
-        ref='gridview'
-        style={
-        {
-          width:'100%',
-          height:'100%'
-        }
-      }
-       gridItemHeight={80}
-       columnCount={4} 
-       data={datasource} 
-       renderItem={renderitem}
-       onItemClick={
-         (row, column, item) =>{
-           alert('clicked item : ' + item);
-         }
-       }
-       >
-        </GridView>
-      </View>
-    )
-  }
+  //         this.refs.gridview.updateGridView();
+  //     }} title='update grid view'/>
+  //       <GridView
+  //       ref='gridview'
+  //       style={
+  //       {
+  //         width:'100%',
+  //         height:'100%'
+  //       }
+  //     }
+  //      gridItemHeight={80}
+  //      columnCount={4} 
+  //      data={datasource} 
+  //      renderItem={renderitem}
+  //      onItemClick={
+  //        (row, column, item) =>{
+  //          alert('clicked item : ' + item);
+  //        }
+  //      }
+  //      >
+  //       </GridView>
+  //     </View>
+  //   )
+  // }
 
   renderTabTable = (index)=>{
     this.headerArray = ['保障计划', '投保对象','每期保费'];
@@ -223,14 +242,14 @@ export default class HomeRender extends ZAComponent{
           headerItemWidthArray={this.headerItemWidthArray}
           customStyle={{
             headerHeight: 45,
-            haderBackgroundColor: 'white',
+            headerBackgroundColor: 'white',
             headerColor:'#333333',
             headerFontSize: 14,
             headerSeparatorWidth: 0.5,
             headerSeparatorColor: '#e1e1e1',
             headerSeparatorHeight: 14.5,
 
-            tableSeparatorLineColor: '#e1e1e1',
+            tableSeparatorLineColor: 'blue',
             tableSeparatorLineWidth: 1
           }}
           renderTableItem={this.renderTableItem}
@@ -253,13 +272,14 @@ export default class HomeRender extends ZAComponent{
         width:'100%',
         height: '100%'
       }}>
+
       <PureList enableItemDelete={true}
         onItemDeleted={function(index, item){
           alert('u removed item : ' + index);
         }}
         ref='purelist' data={ll} onItemSelected={
         (index, item, purelist)=>{
-          //  alert('u click a item with index = ' + index);
+          //alert('u click a item with index = ' + index);
           ll.push({
             title: 'a' + ll.length
           })
@@ -268,13 +288,14 @@ export default class HomeRender extends ZAComponent{
           this.refs.purelist.updateListItem(-1);
         }
       }
+
       renderItem={
         (item)=>(
             <View style={
               {
-                width:'100%',
+                width: '100%',
                 height: 50,
-                justifyContent : 'center'
+                justifyContent : 'center',
               }
             }>
             <Text ref='mytext'>
@@ -283,6 +304,7 @@ export default class HomeRender extends ZAComponent{
           </View>
         )
     }
+    
     ItemSeparatorComponent={
       function(){
         return <View style={
@@ -296,99 +318,97 @@ export default class HomeRender extends ZAComponent{
     }
   }
   >
-
   </PureList>
 </View>
 )
 }
 
-renderTabControls(index){
-  return (
-    <View key={index}>
-      <Button onPress={()=>{
-        let items = [
-          '111',
-          '222',
-          '333',
-          '444',
-          '555',
-          '666'
-        ]
+// renderTabControls(index){
+//   return (
+//     <View key={index}>
+//       <Button onPress={()=>{
+//         let items = [
+//           '111',
+//           '222',
+//           '333',
+//           '444',
+//           '555',
+//           '666'
+//         ]
 
-        SinglePickerDialog.showPicker(items, 3, (index, itemlist)=>{
-          this.showToast('the item u selected is = ' + itemlist[index])
-        });
-      }} title='picker'/>
-      <Button onPress={()=>{
-        let items = [[
-          '111',
-          '222',
-          '333',
-          '444',
-          '555',
-          '666'
-        ],
-        [],
-        []
-      ]
+//         SinglePickerDialog.showPicker(items, 3, (index, itemlist)=>{
+//           this.showToast('the item u selected is = ' + itemlist[index])
+//         });
+//       }} title='picker'/>
+//       <Button onPress={()=>{
+//         let items = [[
+//           '111',
+//           '222',
+//           '333',
+//           '444',
+//           '555',
+//           '666'
+//         ],
+//         [],
+//         []
+//       ]
 
-        MultiPickerDialog.showMultiPicker(items,
-        (multipicker, column, index)=>{
-          if(column == 0){
-            multipicker.updateColumnItems(1, ['t1', 't2', 't3']);
-          }else if(column == 1){
-            multipicker.updateColumnItems(2, ['m1', 'm2', 'm3', 'm4']);
-          }
-        },
-        (indexarray, items)=>{
-          let s = '';
-          for(let i = 0; i < indexarray.length; i++){
-            s += 'column ' + i + ': select index = ' + indexarray[i] + ';'
-          }
+//         MultiPickerDialog.showMultiPicker(items,
+//         (multipicker, column, index)=>{
+//           if(column == 0){
+//             multipicker.updateColumnItems(1, ['t1', 't2', 't3']);
+//           }else if(column == 1){
+//             multipicker.updateColumnItems(2, ['m1', 'm2', 'm3', 'm4']);
+//           }
+//         },
+//         (indexarray, items)=>{
+//           let s = '';
+//           for(let i = 0; i < indexarray.length; i++){
+//             s += 'column ' + i + ': select index = ' + indexarray[i] + ';'
+//           }
 
-          alert(s);
-        });
-      }} title='multi picker'/>
-      <Button onPress={()=>{
-        let dialog = new AlertDialog();
-        dialog.setTitle('test');
-        dialog.setContent('test content')
-        dialog.setLeftButton('left', function(){
-          dialog.hide();
-        })
-        dialog.setRightButton('right', function(){
-          dialog.hide();
-        })
-        dialog.show();
-      }} title='alert dialog'/>
-      <Button onPress={()=>{
-        let dialog = new Dialog();
-        dialog.setContentRender(function(){
-          return (
-            <View>
-              <Button title='close' onPress={
-                function(){
-                  dialog.hide();
-                }
-              }>
+//           alert(s);
+//         });
+//       }} title='multi picker'/>
+//       <Button onPress={()=>{
+//         let dialog = new AlertDialog();
+//         dialog.setTitle('test');
+//         dialog.setContent('test content')
+//         dialog.setLeftButton('left', function(){
+//           dialog.hide();
+//         })
+//         dialog.setRightButton('right', function(){
+//           dialog.hide();
+//         })
+//         dialog.show();
+//       }} title='alert dialog'/>
+//       <Button onPress={()=>{
+//         let dialog = new Dialog();
+//         dialog.setContentRender(function(){
+//           return (
+//             <View>
+//               <Button title='close' onPress={
+//                 function(){
+//                   dialog.hide();
+//                 }
+//               }>
 
-            </Button>
-          </View>
-        )
-      })
-      dialog.show();
-    }} title='common dialog'/>
-     <Button onPress={()=>{
-       let current = new Date().getTime().toString();
-        SADatePickerWidget.show('date', current, (selectdate)=>{
-          this.showToast('selete date = ' + selectdate);
-        });
-      }} title='date picker'/>
-  </View>
-)
-}
+//             </Button>
+//           </View>
+//         )
+//       })
+//       dialog.show();
+//     }} title='common dialog'/>
+//      <Button onPress={()=>{
+//        let current = new Date().getTime().toString();
+//         SADatePickerWidget.show('date', current, (selectdate)=>{
+//           this.showToast('selete date = ' + selectdate);
+//         });
+//       }} title='date picker'/>
+//   </View>
+// )
+// }
     renderItem() {
-
         // 数组
         var itemAry = [];
         // 颜色数组
@@ -407,6 +427,7 @@ componentDidMount(){
 }
 
 render() {
+ // console.log('tabcontrol = ' + TabControl);
   return (
     <View style={styles.container}>
       <TabControl 
@@ -429,9 +450,10 @@ render() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    height:'100%',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    backgroundColor: '#F5FCFF',
+    // backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
@@ -443,14 +465,14 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-    scrollView: {
+  scrollView: {
         backgroundColor: 'red',
         position:'absolute',
         marginTop:100,
-    },
-    itemStyle: {
+  },
+  itemStyle: {
         // 尺寸
         width:ScreenWidth,
         height:130
-    },
+  },
 });
