@@ -98,9 +98,9 @@ class Login extends ZAComponent{
          }>
            <ImageButton style={style.loginbutton}
              image={require('./res/pic_login_but.png')}
-             text={this.zastrings.login_button_title}
-             textColor='blue'
-             textFontSize={16}
+             title={this.zastrings.login_button_title}
+             titleColor='blue'
+             titleFontSize={16}
              onClick={this.clickLogin.bind(this, '1')}
            />
          </View>

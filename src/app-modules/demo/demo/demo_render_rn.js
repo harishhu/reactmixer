@@ -1,17 +1,6 @@
 import React from 'react';
 
 const {
-    //TabControl,
-    // SinglePickerDialog,
-    // AlertDialog,
-    // SelectDialog,
-    // Dialog,
-    // PureList,
-    // TableView,
-    // ZAComponent,
-    // GridView,
-    // MultiPickerDialog,
-    // SADatePickerWidget,
     StyleSheet,
     Text,
     View,
@@ -20,7 +9,14 @@ const {
     Dimensions,
     TabControl,
     PureList,
-    TableView
+    TableView,
+    GridView,
+    SinglePickerDialog,
+    MultiPickerDialog,
+    AlertDialog,
+    Dialog,
+    SADatePickerWidget,
+    UIBase
 } = global.reactmixer;
 
 var ScreenWidth = Dimensions.get('window').width;
@@ -47,36 +43,15 @@ export default class HomeRender extends ZAComponent{
       },
       {
         title: '控件',
-        body: this.renderTest
+        body: this.renderTabControls.bind(this)
       },
       {
         title: '网格',
-        body: this.renderTest
+        body: this.renderGridLayout
       }
     ]
     
     this.initNaviItems();
-  }
-
-  renderTest(index){
-    return (
-      <View key={index}>
-       <Button style={
-        {
-          width: 200,
-          height: 100,
-          backgroundColor:'gray'
-        }
-      } text={'test '+ index}/>
-      <Button style={
-        {
-          width: 200,
-          height: 100,
-          backgroundColor:'gray'
-        }
-      } text={'test '+ index}/>
-      </View>
-    )
   }
 
   initNaviItems(){
@@ -113,55 +88,60 @@ export default class HomeRender extends ZAComponent{
     this.navigator.setRightNaviItems([item1, item2]);
   }
   
-  // renderGridLayout = (index)=>{
-  //   let datasource = [];
-  //   for(let i = 0; i < 13; i++){
-  //     datasource.push('item ' + i);
-  //   }
+  renderGridLayout = (index)=>{
+    let datasource = [];
+    for(let i = 0; i < 13; i++){
+      datasource.push('item ' + i);
+    }
 
-  //   let renderitem = function(row, column, item){
-  //     return (
-  //       <Text>{"data:" + item}</Text>        
-  //     )
-  //   }
+    let renderitem = function(row, column, item){
+      return (
+        <Text>{"data:" + item}</Text>        
+      )
+    }
 
-  //   return (
-  //     <View key={index} style={
-  //       {
-  //         width:'100%',
-  //         height: 300
-  //       }
-  //     }>
-  //       <Button onPress={()=>{
-  //         datasource.splice(0, datasource.length);
-  //         for(i = 0; i < 5; i++){
-  //           datasource.push('new item ' + i);
-  //         }
+    return (
+      <View key={index} style={
+        {
+          width:'100%',
+          height: 300
+        }
+      }>
+        <Button style={
+          {
+            width: '100%',
+            height: 50
+          }
+        } onClick={()=>{
+          datasource.splice(0, datasource.length);
+          for(let i = 0; i < 5; i++){
+            datasource.push('new item ' + i);
+          }
 
-  //         this.refs.gridview.updateGridView();
-  //     }} title='update grid view'/>
-  //       <GridView
-  //       ref='gridview'
-  //       style={
-  //       {
-  //         width:'100%',
-  //         height:'100%'
-  //       }
-  //     }
-  //      gridItemHeight={80}
-  //      columnCount={4} 
-  //      data={datasource} 
-  //      renderItem={renderitem}
-  //      onItemClick={
-  //        (row, column, item) =>{
-  //          alert('clicked item : ' + item);
-  //        }
-  //      }
-  //      >
-  //       </GridView>
-  //     </View>
-  //   )
-  // }
+          this.refs.gridview.updateGridView();
+      }} title='update grid view'/>
+        <GridView
+        ref='gridview'
+        style={
+        {
+          width:'100%',
+          height:'100%'
+        }
+      }
+       gridItemHeight={80}
+       columnCount={4} 
+       data={datasource} 
+       renderItem={renderitem}
+       onItemClick={
+         (row, column, item) =>{
+           alert('clicked item : ' + item);
+         }
+       }
+       >
+        </GridView>
+      </View>
+    )
+  }
 
   renderTabTable = (index)=>{
     this.headerArray = ['保障计划', '投保对象','每期保费'];
@@ -249,7 +229,7 @@ export default class HomeRender extends ZAComponent{
             headerSeparatorColor: '#e1e1e1',
             headerSeparatorHeight: 14.5,
 
-            tableSeparatorLineColor: 'blue',
+            tableSeparatorLineColor: '#e1e1e1',
             tableSeparatorLineWidth: 1
           }}
           renderTableItem={this.renderTableItem}
@@ -323,91 +303,150 @@ export default class HomeRender extends ZAComponent{
 )
 }
 
-// renderTabControls(index){
-//   return (
-//     <View key={index}>
-//       <Button onPress={()=>{
-//         let items = [
-//           '111',
-//           '222',
-//           '333',
-//           '444',
-//           '555',
-//           '666'
-//         ]
+renderTabControls(index){
+  let parent = this;
 
-//         SinglePickerDialog.showPicker(items, 3, (index, itemlist)=>{
-//           this.showToast('the item u selected is = ' + itemlist[index])
-//         });
-//       }} title='picker'/>
-//       <Button onPress={()=>{
-//         let items = [[
-//           '111',
-//           '222',
-//           '333',
-//           '444',
-//           '555',
-//           '666'
-//         ],
-//         [],
-//         []
-//       ]
+  return (
+    <View key={index}>
+      {/* <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        let items = [
+          '111',
+          '222',
+          '333',
+          '444',
+          '555',
+          '666'
+        ]
 
-//         MultiPickerDialog.showMultiPicker(items,
-//         (multipicker, column, index)=>{
-//           if(column == 0){
-//             multipicker.updateColumnItems(1, ['t1', 't2', 't3']);
-//           }else if(column == 1){
-//             multipicker.updateColumnItems(2, ['m1', 'm2', 'm3', 'm4']);
-//           }
-//         },
-//         (indexarray, items)=>{
-//           let s = '';
-//           for(let i = 0; i < indexarray.length; i++){
-//             s += 'column ' + i + ': select index = ' + indexarray[i] + ';'
-//           }
+        SinglePickerDialog.showPicker(items, 3, (index, itemlist)=>{
+          this.showToast('the item u selected is = ' + itemlist[index])
+        });
+      }} title='picker'/>
+      <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        let items = [[
+          '111',
+          '222',
+          '333',
+          '444',
+          '555',
+          '666'
+        ],
+        [],
+        []
+      ]
 
-//           alert(s);
-//         });
-//       }} title='multi picker'/>
-//       <Button onPress={()=>{
-//         let dialog = new AlertDialog();
-//         dialog.setTitle('test');
-//         dialog.setContent('test content')
-//         dialog.setLeftButton('left', function(){
-//           dialog.hide();
-//         })
-//         dialog.setRightButton('right', function(){
-//           dialog.hide();
-//         })
-//         dialog.show();
-//       }} title='alert dialog'/>
-//       <Button onPress={()=>{
-//         let dialog = new Dialog();
-//         dialog.setContentRender(function(){
-//           return (
-//             <View>
-//               <Button title='close' onPress={
-//                 function(){
-//                   dialog.hide();
-//                 }
-//               }>
+        MultiPickerDialog.showMultiPicker(items,
+        (multipicker, column, index)=>{
+          if(column == 0){
+            multipicker.updateColumnItems(1, ['t1', 't2', 't3']);
+          }else if(column == 1){
+            multipicker.updateColumnItems(2, ['m1', 'm2', 'm3', 'm4']);
+          }
+        },
+        (indexarray, items)=>{
+          let s = '';
+          for(let i = 0; i < indexarray.length; i++){
+            s += 'column ' + i + ': select index = ' + indexarray[i] + ';'
+          }
 
-//             </Button>
-//           </View>
-//         )
-//       })
-//       dialog.show();
-//     }} title='common dialog'/>
-//      <Button onPress={()=>{
-//        let current = new Date().getTime().toString();
-//         SADatePickerWidget.show('date', current, (selectdate)=>{
-//           this.showToast('selete date = ' + selectdate);
-//         });
-//       }} title='date picker'/>
-//   </View>
-// )
-// }
+          alert(s);
+        });
+      }} title='multi picker'/> */}
+      <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        UIBase.showToast('this is a test toast message');
+      }} title='toast'/>
+      <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        UIBase.showProgress(true);
+        setTimeout(function(){
+          UIBase.showProgress(false);
+        }, 3000);
+      }} title='spinner'/>
+      <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        let dialog = new AlertDialog();
+        dialog.setTitle('test');
+        dialog.setContent('test content')
+        dialog.setLeftButton('left', function(){
+          dialog.hide();
+        })
+        dialog.setRightButton('right', function(){
+          dialog.hide();
+        })
+        dialog.show(this);
+      }} title='alert dialog'/>
+      <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+        let dialog = new Dialog();
+        dialog.setContentRender(function(){
+          return (
+            <View>
+              <Button style={
+        {
+          width: 100,
+          height: 50,
+          backgroundColor:'white'
+        }
+      } title='close' onClick={
+                function(){
+                  dialog.hide();
+                }
+              }>
+      
+            </Button>
+          </View>
+        )
+      })
+      dialog.show(this);
+      }} title='common dialog'/>
+     {/* <Button style={
+        {
+          width:'100%',
+          height: 50,
+          backgroundColor:'white'
+        }
+      } onClick={()=>{
+       let current = new Date().getTime().toString();
+        SADatePickerWidget.show('date', current, (selectdate)=>{
+          this.showToast('selete date = ' + selectdate);
+        });
+      }} title='date picker'/> */}
+  </View>
+)
+}
     renderItem() {
         // 数组
         var itemAry = [];
@@ -424,6 +463,32 @@ export default class HomeRender extends ZAComponent{
 
 componentDidMount(){
   this.showToast('launch data = ' + this.launchData);
+
+  // setTimeout(()=>{
+  //   let dialog = new Dialog();
+  //   dialog.setContentRender(function(){
+  //     return (
+  //       <View>
+  //         <Button style={
+  //   {
+  //     width: 100,
+  //     height: 50,
+  //     backgroundColor:'white'
+  //   }
+  // } title='close' onClick={
+  //           function(){
+  //             dialog.hide();
+  //           }
+  //         }>
+
+  //       </Button>
+  //     </View>
+  //   )
+  // })
+  // dialog.show(this);
+  // }, 3000)
+
+  this.test = 'hufuyi';
 }
 
 render() {

@@ -1,0 +1,23 @@
+.dialog{
+  position: fixed;
+
+  left: 0px;
+  right: 0px;
+  top:0px;
+  bottom: 0px;
+
+  z-index: 10000;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:before{
+    content:'';
+    display:inline-block;
+    height:100%;
+    vertical-align: middle;
+  }
+
+  .content{
+    display: inline-block;
+  }
+}
