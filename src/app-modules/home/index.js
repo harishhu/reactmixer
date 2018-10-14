@@ -8,11 +8,11 @@ const {
 import language_chs from './language/zastring_chs';
 import language_cht from './language/zastring_cht';
 
-// import DemoLogin from './login/login_render_rn';
-// import DemoLoginDataControl from './login/logindatacontrol';
+import DemoLogin from './login/login_render_rn';
+import DemoLoginDataControl from './login/logindatacontrol';
 
-// import AppHome from './home/apphome';
-import Test from './login/login';
+import AppHome from './home/apphome';
+// import Test from './login/login';
 
 //set background color, title size & color for action bar
 // AppConfig.actionBarStyle = {
@@ -44,11 +44,14 @@ class HomeModule extends AppModule{
             //         controller: DemoLoginDataControl
             //     }
             // },
-            // AppHome:{
-            //     render: AppHome
-            // },
+            AppHome:{
+                render: AppHome
+            },
             Test:{
-                render: Test
+                render: DemoLogin,
+                initprops: {
+                    controller: DemoLoginDataControl
+                }
             }
         }
     }

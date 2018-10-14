@@ -1,4 +1,4 @@
-import {
+const {
     RequestItemBase
 } = global.reactmixer;
 

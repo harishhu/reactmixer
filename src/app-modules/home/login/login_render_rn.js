@@ -1,21 +1,9 @@
 import React from 'react';
 
-// import {
-//   Platform,
-//   StyleSheet,
-//   Text,
-//   View,
-//   Button,
-//   NativeModules,
-//   Image,
-//   Dimensions,
-//   TextInput
-// } from 'react-native';
-
 const {
-    // FlexButton,
-    // ImageButton,
+    ImageButton,
     ZAComponent,
+    Image,
     Utils,
     ZAString,
     View,
@@ -61,7 +49,7 @@ class LoginRenderRN extends ZAComponent{
    if(type == '1'){
      this.navigator.navigate('AppHome', 'test launch data');
    }else{
-     this.navigator.navigate('default', 'test launch data', 'demo');
+     this.navigator.navigate('DemoWidgets', 'test launch data', 'demo');
    }
   }
 
@@ -112,9 +100,9 @@ class LoginRenderRN extends ZAComponent{
          }>
            <ImageButton style={styles.loginbutton}
              image={require('./res/pic_login_but.png')}
-             text={this.zastrings.image_button}
-             textColor='blue'
-             textFontSize={16}
+             title={this.zastrings.image_button}
+             titleColor='blue'
+             titleFontSize={16}
              onClick={this.clickLogin.bind(this, '1')}
            />
          </View>
@@ -124,10 +112,10 @@ class LoginRenderRN extends ZAComponent{
              display:this.props.hideLoginButton ? 'none': 'flex'
            }
          }>
-           <FlexButton style={styles.flexbutton}
+           <ImageButton style={styles.flexbutton}
              image={require('./res/pic_login_but.png')}
-             text={this.zastrings.flex_button}
-             textStyle={
+             title={this.zastrings.flex_button}
+             titleStyle={
                {
                  marginLeft:20
                }

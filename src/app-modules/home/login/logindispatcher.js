@@ -1,6 +1,6 @@
 import LoginRequestItem from './loginrequestitem'
 
-import {
+let {
     AppConfig,
     RequestItemBase
 } = global.reactmixer;

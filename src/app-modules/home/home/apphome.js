@@ -1,19 +1,16 @@
 import React from 'react';
 
-import {
-  StyleSheet,
-  View,
-  Dimensions,
-  Image,
-  Text
-} from 'react-native';
-
 const {
-    BannerView,
+    // BannerView,
     ZAComponent,
-    AutoTextView,
+    // AutoTextView,
     TabControl,
-    AppModuleManager
+    AppModuleManager,
+    StyleSheet,
+    View,
+    Dimensions,
+    Image,
+    Text
 } = global.reactmixer;
 
 const placeholderImage = require('./res/首页-banner.png');
@@ -51,12 +48,12 @@ class AppHome extends ZAComponent{
         body:(index)=>{
           return (
             <View key={index}>
-               <BannerView placeholderImage={placeholderImage}
+               {/* <BannerView placeholderImage={placeholderImage}
                              imageURLStringsGroup={this.imageURLStringsGroup}
                              didSelectIndex={this.banneritemclicked}/>
                <AutoTextView items={this.imageURLStringsGroup}
                 textSize={16} textColor="#0000ff" autoScrollTimeInterval={3}
-                />
+                /> */}
             </View>
           )
         }

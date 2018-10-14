@@ -1,7 +1,7 @@
 import loginDispatcher from './logindispatcher';
 import React from 'react';
 
-import {
+const {
     ZADataControl
 } = global.reactmixer;
 
